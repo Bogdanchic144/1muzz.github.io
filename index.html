@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная - Muzz</title>
+    <link rel="icon" href="./images/iconizer-Page-1.svg" />
+    <link rel="stylesheet" href="./fonts/font.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="header__icon"
+          src="./images/iconizer-Page-1.svg"
+          alt="Логотип Muzz"
+        />
+        <span class="header__title">Muzz</span>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item header__nav-item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="about_us.html">О нас</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="bibl.html">Библиотека</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Нужна музыка для<br />компании?
+          </h1>
+          <p class="hero__text">
+            Открывайте для себя новые плейлисты и слушайте их бесплатно.
+            Наш помощник тщательно подберет песни для вас.
+          </p>
+          <form class="playlist-form">
+            <input class="playlist-form__input" type="text" id="playlist-url" placeholder="Введите ссылку на плейлист">
+            <button class="playlist-form__button" type="submit">Добавить плейлист</button>
+          </form>
+        </div>
+        <div class="hero__image">
+          <img
+            src="./images/Фото на главном экране.svg"
+            alt="Три человека играют на музыкальных инструментах и поют"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="podval">&copy Muzz 2025</p>
+    </footer>
+  </body>
+</html>
+

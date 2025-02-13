@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Библиотека - Muzz</title>
+    <link rel="icon" href="./images/iconizer-Page-1.svg" />
+    <link rel="stylesheet" href="./fonts/font.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="header__icon"
+          src="./images/iconizer-Page-1.svg"
+          alt="Логотип Muzz"
+        />
+        <span class="header__title">Muzz</span>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="about_us.html">О нас</a>
+          </li>
+          <li class="header__nav-item header__nav-item--active">
+            <a href="bibl.html">Библиотека</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main">
+      <div class="playlist-panel">
+        <div class="playlist-header" onclick="togglePlaylist()">
+          <h3 class="playlist-title">Название плейлиста</h3>
+          <span class="toggle-arrow">▼</span>
+        </div>
+        <div class="playlist-songs hidden">
+          <p>song_1</p>
+          <p>song_2</p>
+          <p>song_3</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="podval">&copy Muzz 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

@@ -34,19 +34,26 @@
         </ul>
       </nav>
     </header>
-    
+
     <main class="main">
-      <div class="playlist-panel">
-        <div class="playlist-header" onclick="togglePlaylist()">
-          <h3 class="playlist-title">Название плейлиста</h3>
-          <span class="toggle-arrow">▼</span>
+      <section class="bibl">
+        <div class="playlist-panel">
+          <div class="playlist-header" onclick="togglePlaylist()">
+            <h3 class="playlist-title">Название плейлиста</h3>
+            <span class="toggle-arrow">▼</span>
+          </div>
+          <div class="playlist-songs hidden">
+            <p>song_1</p>
+            <p>song_2</p>
+            <p>song_3</p>
+          </div>
         </div>
-        <div class="playlist-songs hidden">
-          <p>song_1</p>
-          <p>song_2</p>
-          <p>song_3</p>
+        <div class="bibl-btn">
+          <button class="playlist-generate" type="submit">
+            Сгенерировать плейлист
+          </button>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <p class="podval">&copy Muzz 2025</p>
@@ -55,4 +62,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-

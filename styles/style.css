@@ -272,6 +272,7 @@ s .playlist-songs p {
     width: 300px;
     height: 80px;
     text-align: center;
+    margin-bottom: 100px;
     
   }
   .hero__title {
@@ -400,5 +401,6 @@ img {
 }
 
 .bibl-btn {
-  margin-top: 300px;
+  margin-top: 250px;
+  margin-bottom: 50px;
 }

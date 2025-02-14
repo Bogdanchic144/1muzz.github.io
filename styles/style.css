@@ -81,6 +81,7 @@ body {
 .main {
   flex: 1;
   overflow-y: auto;
+  justify-content: center;
 }
 
 .hero {
@@ -91,8 +92,8 @@ body {
   padding: 2rem;
 }
 
-.hero__image{
-background-position: left 300px;
+.hero__image {
+  background-position: left 300px;
 }
 
 .hero__content {
@@ -120,8 +121,9 @@ background-position: left 300px;
   user-select: none;
   margin-left: 111px;
 }
-.ab_ustext{
+.ab_ustext {
   margin-bottom: 432px;
+  user-select: none;
 }
 
 .playlist-form {
@@ -129,6 +131,26 @@ background-position: left 300px;
   flex-direction: column;
   gap: 60px;
   width: 100%;
+}
+.playlist-generate {
+  font-family: "Montserrat";
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: #008bea;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  box-shadow: 0px 5px 5px #a6a6a6;
+  width: 400px;
+  transition: background-color 0.6s, transform 0.5s;
+}
+
+.playlist-generate:hover {
+  background-color: #0155e7;
+  transform: scale(103%);
+  color: white;
 }
 
 .playlist-form__input {
@@ -178,7 +200,8 @@ background-position: left 300px;
   width: 300px;
   height: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 400px;
+  margin-top: 500p;
+  margin-top: 200px;
 }
 
 .playlist-header {
@@ -198,6 +221,7 @@ background-position: left 300px;
   margin: 0;
   font-size: 1.2rem;
   font-weight: 500;
+  user-select: none;
 }
 
 .playlist-songs {
@@ -227,6 +251,7 @@ s .playlist-songs p {
   color: var(--color-primary);
   margin-bottom: 1rem;
   font-size: 35px;
+  user-select: none;
 }
 
 .about-us__content {
@@ -243,11 +268,17 @@ s .playlist-songs p {
 }
 
 @media (max-width: 768px) {
-  .hero__title{
-    margin-left: 0px
+  .playlist-generate{
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    
   }
-  .hero__text{
-    margin-left: 0px
+  .hero__title {
+    margin-left: 0px;
+  }
+  .hero__text {
+    margin-left: 0px;
   }
   .header {
     flex-direction: column;
@@ -265,7 +296,7 @@ s .playlist-songs p {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .header__icon {
     width: 40px;
     height: 40px;
@@ -288,7 +319,7 @@ s .playlist-songs p {
     width: -webkit-fill-available;
   }
 
-  .ab_ustext{
+  .ab_ustext {
     margin-bottom: 0px;
   }
   .playlist-form {
@@ -345,7 +376,6 @@ img {
 }
 
 @media (max-width: 1460px) {
-
   .hero {
     display: flex;
     align-items: center;
@@ -361,4 +391,14 @@ img {
     margin-bottom: 2rem;
     flex-direction: column;
   }
+}
+
+.bibl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bibl-btn {
+  margin-top: 300px;
 }
